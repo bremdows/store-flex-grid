@@ -2,7 +2,23 @@
     /* 
         COLORES
     */
+    --color-principal: #6386E7;
+    --color-principal-light: #6F90E6;
+    --color-principal-dark: #4063CD;
+
+    --color-product-1: #ECE9F0;
+    --color-product-2: #F7E6D7;
+    --color-product-3: #E4D1EF;
+    --color-product-4: #EDD1D5;
+    --color-product-5: #D1D5ED;
+    --color-product-6: #EEEDF4;
     
+    --color-icon: #FFE4A9;
+
+    --light: #fff;
+    --light-dark: #D5D5D7;
+    --dark: #000;
+    --dark-light: #3A373C;
     /* 
         FUENTES
     */
@@ -36,7 +52,6 @@ ul{
 .text-center{
     text-align: center;
 }
-
 /* 
     OTHERS
 */
