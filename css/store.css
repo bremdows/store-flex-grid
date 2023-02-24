@@ -12,7 +12,8 @@
     --color-product-4: #EDD1D5;
     --color-product-5: #D1D5ED;
     --color-product-6: #EEEDF4;
-    
+    --color-body: #D5DEFA;
+
     --color-icon: #FFE4A9;
 
     --light: #fff;
@@ -23,6 +24,13 @@
         FUENTES
     */
     --fuente-principal: "Raleway", sans-serif;
+
+    /* 
+        TAMAÑOS
+    */
+    --size-radius: .5rem;
+    --size-bar-menu: 4rem;
+    --size-bar-menu-radius: 1rem;
 }
 /* 
     GENERALES
@@ -38,6 +46,7 @@ html{
 }
 body{
     font: normal normal 1.6rem var(--fuente-principal);
+    background: var(--color-body);
 }
 a{
     text-decoration: none;
@@ -52,6 +61,47 @@ ul{
 .text-center{
     text-align: center;
 }
+
 /* 
-    OTHERS
+    BAR MENU
+*/
+.bar-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--size-bar-menu);
+    height: var(--size-bar-menu);
+    background: var(--color-principal);
+    border-radius: var(--size-bar-menu-radius);
+}
+.bar-menu::before,
+.bar-menu::after{
+    content: '';
+    display: block;
+    
+}
+/* 
+    STORE
+*/
+.content-store{
+    max-width: 192rem;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: 65% 30%;
+    padding: 2rem;
+    background: var(--light);
+    border-radius: var(--size-radius);
+}
+.store{
+
+}
+.store__header{
+    display: grid;
+    grid-template-columns: 35% 60%;
+}
+
+/* 
+    CART
 */
