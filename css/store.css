@@ -1,6 +1,6 @@
 :root{
     /* 
-        COLORES
+        * COLORES
     */
     --color-principal: #6386E7;
     --color-principal-light: #6F90E6;
@@ -21,19 +21,19 @@
     --dark: #000;
     --dark-light: #3A373C;
     /* 
-        FUENTES
+        * FUENTES
     */
     --fuente-principal: "Raleway", sans-serif;
 
     /* 
-        TAMAÑOS
+        * TAMAÑOS
     */
     --size-radius: .5rem;
     --size-bar-menu: 4rem;
     --size-bar-menu-radius: 1rem;
 }
 /* 
-    GENERALES
+    * GENERALES
 */
 *,
 *::before,
@@ -56,14 +56,20 @@ ul{
     list-style: none;
 }
 /* 
-    UTILITARIOS
+    * UTILITARIOS
 */
 .text-center{
     text-align: center;
 }
-
 /* 
-    BAR MENU
+    * SEE MORE
+*/
+.see-more{
+    color: var(--color-principal);
+    font-weight: 700;
+}
+/* 
+    * BAR MENU
 */
 .bar-menu{
     display: flex;
@@ -100,7 +106,7 @@ ul{
 }
 
 /* 
-    STORE
+    * STORE
 */
 .content-store{
     max-width: 192rem;
@@ -117,12 +123,12 @@ ul{
 .store{
 }
 /* 
-    STORE HEADER
+   * STORE HEADER
 */
 .store__header{
     display: grid;
     justify-content: space-between;
-    grid-template: 5rem / 20% minmax(35rem, 40%);
+    grid-template: 5rem / 20% minmax(35rem, 50%);
 }
 .store__brand{
     display: flex; 
@@ -137,12 +143,13 @@ ul{
 }
 .store__search{
     display: flex;
-    justify-content: center;
     align-items: center;
     box-shadow: 0 0 2rem rgba(0, 0, 0, .15);
     border-radius: 1.5rem;
 }
-
+.store__categories{
+    margin: 0rem 4rem;
+}
 .store__search-input{
     position: relative;
 }
@@ -155,10 +162,47 @@ ul{
 .store__input-search{
     border: none;
     padding-left: 3rem;
+    width: 100%;
 }
 .store__input-search:focus{
     outline: 0;
 }
 /* 
-    CART
+   * STORE PRODUCTS
+*/
+.store__products{
+    display: grid;
+    grid-template: auto auto / 25% 1fr 0.5fr 0.5fr 30%;
+    grid-gap: 2rem;
+}
+.store__header-products{
+    grid-column: 1 / 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.store__product-1{
+    grid-row: 2 / 4;
+    background: var(--color-product-1);
+}
+.store__product-2{
+    background: var(--color-product-2);
+}
+.store__product-3{
+    grid-column: 3 / 5;
+    background: var(--color-product-3);
+}
+.store__product-4{
+    background: var(--color-product-4);
+}
+.store__product-5{
+    grid-column: 2 / 4;
+    background: var(--color-product-5);
+}
+.store__product-6{
+    grid-column: 4 / 6;
+    background: var(--color-product-6);
+}
+/* 
+    * CART
 */
