@@ -181,6 +181,11 @@ ul{
     justify-content: space-between;
     align-items: center;
 }
+.store__product{
+    border-radius: 1.2rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
 .store__product-1{
     grid-row: 2 / 4;
     background: var(--color-product-1);
@@ -202,6 +207,26 @@ ul{
 .store__product-6{
     grid-column: 4 / 6;
     background: var(--color-product-6);
+}
+.store__product-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+.store__content-data-product{
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    align-self: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.store__product-name{
+    display: inline-block;
+    margin-right: 2rem;
+    
 }
 /* 
     * CART
