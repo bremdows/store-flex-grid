@@ -13,11 +13,16 @@
     --color-product-5: #EBD3D6;
     --color-product-6: #D0D7ED;
     --color-body: #D5DEFA;
-
     --color-icon: #FFE4A9;
+
+    --color-favourite-1: #C3B38F;
+    --color-favourite-2: #7688AF;
+    --color-favourite-3: #CC8893;
+    --color-favourite-4: #514E54;
 
     --light: #fff;
     --light-intermedium: #D5D5D7;
+    --light-opaque: #EEECF8;
     --light-dark: #969699;
     --dark: #000;
     --dark-light: #3A373C;
@@ -251,7 +256,8 @@ ul{
 */
 .store__favourites{
     display: grid;
-    grid-template: 1fr 1fr / repeat(4, 1fr);
+    grid-template: 10rem 1fr / repeat(4, 1fr);
+    grid-column-gap: 3rem;
 }
 .store__header-favourites{
     grid-column: 1 / 5;
@@ -263,6 +269,7 @@ ul{
     color: var(--light-intermedium);
     font-weight: 700;
     margin-right: 2rem;
+    cursor: pointer;
 }
 .store__favourite:last-child{
     margin-right: 0;
@@ -270,6 +277,57 @@ ul{
 .store__favourite--active{
     color: var(--color-principal);
 }
+
+.store__favourite-product{
+    border-radius: var(--size-radius-products);
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, .15);
+}
+
+.store__favourite-content-models{
+    position: relative;
+    background: var(--light-opaque);
+    height: 15rem;
+    border-radius: var(--size-radius-products);
+}
+.store__favourite-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--size-radius-products) var(--size-radius-products) 0 0;
+    display: inline-block;
+}
+.store__favourite-models{
+    position: absolute;
+    top: calc(100% - .95rem);
+    left: 10%;
+}
+.store__favourite-models span{
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    border-radius: 50%;
+}
+.store__favourite-models span:nth-child(1){background:var(--color-favourite-1);}
+.store__favourite-models span:nth-child(2){background:var(--color-favourite-2);}
+.store__favourite-models span:nth-child(3){background:var(--color-favourite-3);}
+.store__favourite-models span:nth-child(4){background:var(--color-favourite-4);}
+
+.store__favourite-data{
+    background: var(--light);
+    border-radius: var(--size-radius-products);
+    padding: 0 2rem 1.5rem;
+}
+.store__favourite-name{
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1);
+}
+.store__favourite-price{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
 /* 
     * CART
 */
+.cart{
+    background: var(--color-principal);
+    border-radius: var(--size-radius-products);
+}
