@@ -185,58 +185,76 @@
                 
             </div>
         </section>
+
+        <!-- * CART -->
         <section class="cart">
             <!-- HEADER -->
             <div class="cart__content">
                 <header class="cart__account">
                     <div class="cart__toogle">
-                        <i class="cart__icon-minimize"></i>
+                        <i class="cart__icon-minimize fa-solid fa-arrow-right"></i>
                     </div>
                     <div class="cart__account-bar">
-                        <span>
-                            <i class="cart__icon-message"></i>
+                        <span class="cart__icons-content cart__icons-content--active">
+                            <i class="cart__icon-message fa-solid fa-envelope"></i>
+                            <span class="cart__message-notification"></span>
                         </span>
-                        <span>
-                            <i class="cart__icon-account"></i>
+                        <span class="cart__icons-content">
+                            <i class="cart__icon-account fa-solid fa-user"></i>
                         </span>
                     </div>
                 </header>
-                <!-- LIST OF PRODUCTOS TO BUY -->
+                <!-- * LIST OF PRODUCTOS TO BUY -->
                 <section class="cart__list-products">
-                    <div class="cart_product">
-                        <img src="" alt="" class="cart__product-img">
-                        <div>
-                            <p class="cart__product-name"></p>
-                            <span class="cart__product-price"></span>
+                    <div class="cart__product">
+                        <img src="./media/js.webp" alt="" class="cart__product-img">
+
+                        <div class="cart__product-data">
+                            <p class="cart__product-name">Tossberg</p>
+                            <span class="cart__product-price">$125.00</span>
+                            <span class="cart__product-color">Gray</span>
                         </div>
-                        <div class="cart__content-amount">
+                        
+                        <div class="cart__product-amount">
+                            <i class="cart__icon-amount fa-solid fa-caret-up"></i>
                             <span class="cart__amount" id="cart-amout">
                                 0
                             </span>
+                            <i class="cart__icon-amount fa-solid fa-caret-down"></i>
                         </div>
                     </div>
-                    <div class="cart_product">
+                    <div class="cart__product">
                         <img src="" alt="" class="cart__product-img">
-                        <div>
-                            <p class="cart__product-name"></p>
-                            <span class="cart__product-price"></span>
+
+                        <div class="cart__product-data">
+                            <p class="cart__product-name">Tossberg</p>
+                            <span class="cart__product-price">$125.00</span>
+                            <span class="cart__product-color">Red</span>
                         </div>
-                        <div class="cart__content-amount">
+
+                        <div class="cart__product-amount">
+                            <i class="cart__icon-amount fa-solid fa-caret-up"></i>
                             <span class="cart__amount" id="cart-amout">
                                 0
                             </span>
+                            <i class="cart__icon-amount fa-solid fa-caret-down"></i>
                         </div>
                     </div>
-                    <div class="cart_product">
+                    <div class="cart__product">
                         <img src="" alt="" class="cart__product-img">
-                        <div>
-                            <p class="cart__product-name"></p>
-                            <span class="cart__product-price"></span>
+
+                        <div class="cart__product-data">
+                            <p class="cart__product-name">Tossberg</p>
+                            <span class="cart__product-price">$125.00</span>
+                            <span class="cart__product-color">Dark blue</span>
                         </div>
-                        <div class="cart__content-amount">
+
+                        <div class="cart__product-amount">
+                            <i class="cart__icon-amount fa-solid fa-caret-up"></i>
                             <span class="cart__amount" id="cart-amout">
                                 0
                             </span>
+                            <i class="cart__icon-amount fa-solid fa-caret-down"></i>
                         </div>
                     </div>
                 </section>
@@ -245,20 +263,20 @@
                     <p>Sub Total</p>
                     <p>$<span>820.00</span></p>
                     
-                    <p>Shipment <span>Check details</span></p>
+                    <p>Shipment <span class="cart__summary-label">Check details</span></p>
                     <p>$<span>12.00</span></p>
                     
-                    <p>Discount <span>Remove</span></p>
+                    <p>Discount <span class="cart__summary-label">Remove</span></p>
                     <p>$<span>10.00</span></p>
                     
-                    <p class="cart__space"></p>
+                    <p class="cart__space-summary"></p>
 
                     <p class="cart__total">Total</p>
-                    <p>$<span class="cart_total-pay">822.00</span></p>
+                    <p class="cart__total-pay">$<span>822.00</span></p>
                 </section>
             </div>
-            <button class="cart-button-pay"> 
-                <i class="store__icon-add-product fa-solid fa-plus"></i> CHECKOUT PAYMENT
+            <button class="cart__button-pay"> 
+                <i class="cart__icon-add-product fa-solid fa-plus"></i> CHECKOUT PAYMENT
             </button>
         </section>
     </div>
