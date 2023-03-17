@@ -263,8 +263,14 @@ ul{
     align-items: center;
     border-radius: var(--size-radius-products) 0 var(--size-radius-products) 0;
     box-shadow: 3px 4px 20px rgba(0, 0, 0, .15);
+    transition: background .25s ease-in, padding .25s ease-out;
 }
-
+.store__add-product:hover{
+    background: var(--light-intermedium);
+}
+.store__add-product:active{
+    padding-bottom: .5rem;
+}
 /* 
     * STORE FAVOURITES
 */
